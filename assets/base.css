@@ -3530,3 +3530,14 @@ details-disclosure>details {
     padding: 10px !important;
   }
 }
+
+@font-face {
+  font-family: 'sigmarone';
+  src: url('https://cdn.shopify.com/s/files/1/0680/1604/6298/files/SigmarOne-Regular.ttf?v=1711217205');
+}
+
+
+nav a.header__menu-item{
+  font-family: sigmarone;
+}
+
