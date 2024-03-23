@@ -3541,3 +3541,15 @@ nav a.header__menu-item{
   font-family: sigmarone;
 }
 
+header.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a .header__active-menu-item {
+  text-decoration: wavy underline;
+}
+
+.header__menu-item:hover span {
+  text-decoration: wavy underline;
+}
