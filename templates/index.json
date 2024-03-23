@@ -1,5 +1,49 @@
 {
     "sections": {
+        "background_video_cNgL4W": {
+            "type": "background-video",
+            "blocks": {
+                "video_k77JTK": {
+                    "type": "video",
+                    "settings": {
+                        "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1f68a2f50e894bb7ac682cc98323b9d3.mp4",
+                        "title": "",
+                        "text": "",
+                        "color_text": "#ffffff",
+                        "button_label": "",
+                        "button_link": "",
+                        "color_btn_bg": "#ffffff",
+                        "color_btn_text": "#ffffff"
+                    }
+                }
+            },
+            "block_order": [
+                "video_k77JTK"
+            ],
+            "settings": {}
+        },
+        "background_video_hfhNFC": {
+            "type": "background-video",
+            "blocks": {
+                "video_MmDbfM": {
+                    "type": "video",
+                    "settings": {
+                        "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3c1de896a995483a8d4ca898e040ed25.mp4",
+                        "title": "",
+                        "text": "",
+                        "color_text": "#ffffff",
+                        "button_label": "",
+                        "button_link": "",
+                        "color_btn_bg": "#ffffff",
+                        "color_btn_text": "#ffffff"
+                    }
+                }
+            },
+            "block_order": [
+                "video_MmDbfM"
+            ],
+            "settings": {}
+        },
         "image_banner": {
             "type": "image-banner",
             "blocks": {
@@ -816,6 +860,8 @@
         }
     },
     "order": [
+        "background_video_cNgL4W",
+        "background_video_hfhNFC",
         "image_banner",
         "rich_text_pixJXz",
         "collection_list_qwxH4B",
