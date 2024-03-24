@@ -4,9 +4,23 @@
   padding-bottom: 0;
 }
 
+.featured-product {
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-radius: 40px;
+  /* box-shadow: rgba(141, 114, 124, 0.2) 0px 8px 24px; */
+}
+
+.featured-product .product__media{
+  border-radius: 20px;
+}
+
 .featured-product .product-media-container {
   margin-bottom: var(--media-shadow-vertical-offset);
   max-width: 100%;
+  border-radius: 20px;
 }
 
 .featured-product .product__media-item {
