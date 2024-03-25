@@ -2,6 +2,9 @@
     "sections": {
         "cart-items": {
             "type": "main-cart-items",
+            "custom_css": [
+                "h1, h2 {font-family: sigmarone;}"
+            ],
             "settings": {
                 "color_scheme": "background-1",
                 "padding_top": 36,
