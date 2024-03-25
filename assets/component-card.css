@@ -3,6 +3,10 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
+  border-radius: 28px;
+  padding: 8px;
 }
 
 .card {
