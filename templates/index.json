@@ -42,6 +42,7 @@
             "block_order": [
                 "video_MmDbfM"
             ],
+            "disabled": true,
             "settings": {}
         },
         "image_banner": {
@@ -50,14 +51,14 @@
                 "f4d8acd9-693c-425f-943d-eda890d18726": {
                     "type": "text",
                     "settings": {
-                        "text": "Descubre las últimas tendencias en calzado y accesorios.",
+                        "text": "TIENDA RE-PUPI",
                         "text_style": "body"
                     }
                 },
                 "heading": {
                     "type": "heading",
                     "settings": {
-                        "heading": "Vive la experiencia Re-Pupi.",
+                        "heading": "calzado y accesorios",
                         "heading_size": "h1"
                     }
                 },
@@ -80,8 +81,8 @@
                 "button"
             ],
             "custom_css": [
-                ".banner__heading {font-family: \"Sail\", sans-serif; text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); font-weight: 500;}",
-                ".banner__text {color: white; text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);}"
+                ".banner__heading {font-family: \"sigmarone\", sans-serif;}",
+                ".banner__text {color: white; font-family: \"sigmarone\", sans-serif;}"
             ],
             "settings": {
                 "image": "shopify:\/\/shop_images\/repupi-interior-1-qa.jpg",
@@ -90,9 +91,9 @@
                 "desktop_content_position": "bottom-right",
                 "show_text_box": false,
                 "desktop_content_alignment": "right",
-                "color_scheme": "inverse",
+                "color_scheme": "background-2",
                 "image_behavior": "none",
-                "mobile_content_alignment": "right",
+                "mobile_content_alignment": "center",
                 "stack_images_on_mobile": true,
                 "show_text_below": false
             }
@@ -103,14 +104,14 @@
                 "heading_6BjHQP": {
                     "type": "heading",
                     "settings": {
-                        "heading": "Encuentra Tu Estilo Único",
+                        "heading": "",
                         "heading_size": "h2"
                     }
                 },
                 "text_NeVVph": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Explora nuestra colección y descubre por qué somos la elección preferida para mujeres que buscan calzado y accesorios con un toque de innovación y exclusividad. Envíos a todo el país. ¡Visítanos hoy y empieza a caminar con confianza!<\/p>"
+                        "text": "<p>Explora nuestra colección y descubre por qué somos la elección preferida para mujeres que buscan <strong>calzado, bolsos y accesorios<\/strong> con un toque de innovación y exclusividad. <strong>Envíos desde Yopal a todo el país<\/strong>.<\/p>"
                     }
                 }
             },
@@ -118,16 +119,41 @@
                 "heading_6BjHQP",
                 "text_NeVVph"
             ],
+            "custom_css": [],
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "accent-2",
+                "full_width": true,
+                "padding_top": 16,
+                "padding_bottom": 32
+            }
+        },
+        "rich_text_wD8Amm": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_VyPHiq": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "CATEGORÍAS",
+                        "heading_size": "h2"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_VyPHiq"
+            ],
             "custom_css": [
-                ".content-container:after {box-shadow: none;}"
+                ".content-container:after {box-shadow: none;}",
+                "h2.rich-text__heading {font-family: sigmarone; color: white;}"
             ],
             "settings": {
                 "desktop_content_position": "center",
                 "content_alignment": "center",
-                "color_scheme": "",
+                "color_scheme": "accent-1",
                 "full_width": true,
                 "padding_top": 40,
-                "padding_bottom": 52
+                "padding_bottom": 8
             }
         },
         "collection_list_qwxH4B": {
@@ -179,51 +205,48 @@
                 "featured_collection_NEHb9X"
             ],
             "custom_css": [
-                "ul.collection-list {align-items: baseline; column-gap: 40px; justify-content: center;}",
-                "ul.collection-list li {max-width: 100px;}",
-                "ul.collection-list li div.card__media {border-radius: 10%;}",
-                "ul.collection-list li div.card__media img {padding: 10px 10px 10px;}",
-                "ul.collection-list li div.card__inner {background-color: white; border-radius: 0%; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}",
                 "ul.collection-list li h3 a {text-align: center; font-size: 16px;}",
-                "ul.collection-list li h3 a span {display: none;}"
+                "ul.collection-list li h3 a span {display: none;}",
+                "ul.collection-list li div.card__media {border-radius: 20px;}"
             ],
             "settings": {
                 "title": "",
                 "heading_size": "h2",
                 "image_ratio": "square",
                 "columns_desktop": 6,
-                "color_scheme": "scheme-f3976f5c-c27c-4edf-87e8-ea84d2ff9b87",
+                "color_scheme": "accent-1",
                 "show_view_all": false,
                 "columns_mobile": "1",
                 "swipe_on_mobile": false,
-                "padding_top": 40,
-                "padding_bottom": 24
+                "padding_top": 24,
+                "padding_bottom": 40
             }
         },
-        "rich_text_wD8Amm": {
+        "rich_text_wqAtBN": {
             "type": "rich-text",
             "blocks": {
-                "heading_VyPHiq": {
+                "heading_GFchAN": {
                     "type": "heading",
                     "settings": {
-                        "heading": "Tendencias y Novedades",
-                        "heading_size": "h1"
+                        "heading": "TENDENCIAS Y NOVEDADES",
+                        "heading_size": "h2"
                     }
                 }
             },
             "block_order": [
-                "heading_VyPHiq"
+                "heading_GFchAN"
             ],
             "custom_css": [
-                ".content-container:after {box-shadow: none;}"
+                ".content-container:after {box-shadow: none;}",
+                "h2.rich-text__heading {font-family: sigmarone;}"
             ],
             "settings": {
-                "desktop_content_position": "left",
-                "content_alignment": "left",
-                "color_scheme": "",
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "background-2",
                 "full_width": true,
-                "padding_top": 64,
-                "padding_bottom": 16
+                "padding_top": 40,
+                "padding_bottom": 40
             }
         },
         "featured_product_bCxALJ": {
@@ -261,7 +284,7 @@
             ],
             "settings": {
                 "product": "bolso-tipo-sobre-con-compartimento-interno-y-correas-ajustables",
-                "color_scheme": "background-1",
+                "color_scheme": "accent-2",
                 "secondary_background": false,
                 "media_size": "small",
                 "constrain_to_viewport": true,
@@ -270,17 +293,13 @@
                 "image_zoom": "lightbox",
                 "hide_variants": false,
                 "enable_video_looping": false,
-                "padding_top": 36,
-                "padding_bottom": 36
+                "padding_top": 40,
+                "padding_bottom": 0
             }
         },
         "featured_collection_RTGV7Y": {
             "type": "featured-collection",
-            "custom_css": [
-                "div.collection ul li div.card--media {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; background-color: white;}",
-                "div.collection a.button {margin-top: 36px;}",
-                "div.collection ul li div.card--media div.card__content {padding: 10px 10px 0;}"
-            ],
+            "custom_css": [],
             "settings": {
                 "title": "",
                 "heading_size": "h1",
@@ -294,7 +313,7 @@
                 "show_view_all": true,
                 "view_all_style": "solid",
                 "enable_desktop_slider": false,
-                "color_scheme": "",
+                "color_scheme": "accent-2",
                 "image_ratio": "square",
                 "image_shape": "default",
                 "show_secondary_image": true,
@@ -303,7 +322,7 @@
                 "enable_quick_add": false,
                 "columns_mobile": "2",
                 "swipe_on_mobile": false,
-                "padding_top": 36,
+                "padding_top": 8,
                 "padding_bottom": 64
             }
         },
@@ -332,9 +351,9 @@
                     "type": "slide",
                     "settings": {
                         "image": "shopify:\/\/shop_images\/coleccion-calzado.jpg",
-                        "heading": "Descubre la Diferencia Re-Pupi",
+                        "heading": "",
                         "heading_size": "h1",
-                        "subheading": "Zapatos y bolsos que te hacen única. ¡Explora nuestras colecciones exclusivas!",
+                        "subheading": "<strong>Zapatos y bolsos que te hacen única. ¡Explora nuestras colecciones exclusivas!<\/strong>",
                         "button_label": "",
                         "link": "",
                         "button_style_secondary": false,
@@ -342,7 +361,7 @@
                         "show_text_box": false,
                         "text_alignment": "left",
                         "image_overlay_opacity": 20,
-                        "color_scheme": "inverse",
+                        "color_scheme": "scheme-f3976f5c-c27c-4edf-87e8-ea84d2ff9b87",
                         "text_alignment_mobile": "center"
                     }
                 },
@@ -350,9 +369,9 @@
                     "type": "slide",
                     "settings": {
                         "image": "shopify:\/\/shop_images\/repupi-model1-2x.jpg",
-                        "heading": "Calidad y Confianza en Cada Compra",
+                        "heading": "",
                         "heading_size": "h2",
-                        "subheading": "Con Re-Pupi, disfrutas de productos de alta calidad y un servicio al cliente sin igual. ¡Tu felicidad, nuestra misión!",
+                        "subheading": "<strong>Con Re-Pupi, disfrutas de productos de alta calidad y un servicio al cliente sin igual. ¡Tu felicidad, nuestra misión!<\/strong>",
                         "button_label": "",
                         "link": "",
                         "button_style_secondary": false,
@@ -360,7 +379,7 @@
                         "show_text_box": false,
                         "text_alignment": "right",
                         "image_overlay_opacity": 20,
-                        "color_scheme": "inverse",
+                        "color_scheme": "scheme-f3976f5c-c27c-4edf-87e8-ea84d2ff9b87",
                         "text_alignment_mobile": "center"
                     }
                 }
@@ -370,8 +389,7 @@
                 "slide_Rgmii6"
             ],
             "custom_css": [
-                "div.slideshow__controls {display: none;}",
-                "div.slideshow__text {text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 18px, rgba(0, 0, 0, 0.22) 1px 1px 2px;}"
+                "div.slideshow__controls {display: none;}"
             ],
             "settings": {
                 "layout": "full_bleed",
@@ -382,6 +400,33 @@
                 "image_behavior": "none",
                 "show_text_below": true,
                 "accessibility_info": "Slideshow about our brand"
+            }
+        },
+        "rich_text_UrdbDG": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_9qX3tY": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "COLECCIÓN DE BOLSOS",
+                        "heading_size": "h2"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_9qX3tY"
+            ],
+            "custom_css": [
+                ".content-container:after {box-shadow: none;}",
+                "h2.rich-text__heading {font-family: sigmarone;}"
+            ],
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-46b55964-20d2-4fe6-8927-cc11440e7af7",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 40
             }
         },
         "ce036a88-cf82-4e6b-8c31-7999946bdfcd": {
@@ -412,30 +457,21 @@
                 "template--17149929586906__ce036a88-cf82-4e6b-8c31-7999946bdfcd-product-1",
                 "template--17149929586906__ce036a88-cf82-4e6b-8c31-7999946bdfcd-collection-1"
             ],
-            "custom_css": [
-                "div.collage-card.card-wrapper {\/*padding: 10px 10px;*\/ background-color: white; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; margin: 0px 0px;}",
-                "div.card-wrapper div.card__content {padding: 10px 10px 0;}",
-                "div.card-wrapper div.card__inner img {width: 100%; object-fit: cover; \/*padding: 10px;*\/}",
-                "div.collage div.collage__item {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; background-color: white;}"
-            ],
+            "custom_css": [],
             "settings": {
-                "heading": "Colección de bolsos",
+                "heading": "",
                 "heading_size": "h1",
                 "desktop_layout": "left",
                 "mobile_layout": "collage",
                 "card_styles": "product-card-wrapper",
-                "color_scheme": "background-1",
-                "padding_top": 64,
-                "padding_bottom": 48
+                "color_scheme": "scheme-f3976f5c-c27c-4edf-87e8-ea84d2ff9b87",
+                "padding_top": 40,
+                "padding_bottom": 0
             }
         },
         "featured_collection_zhYedF": {
             "type": "featured-collection",
-            "custom_css": [
-                "div.collection ul li div.card--media {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; background-color: white;}",
-                "div.collection a.button {margin-top: 36px;}",
-                "div.collection ul li div.card--media div.card__content {padding: 10px 10px 0;}"
-            ],
+            "custom_css": [],
             "settings": {
                 "title": "",
                 "heading_size": "h2",
@@ -458,8 +494,35 @@
                 "enable_quick_add": false,
                 "columns_mobile": "2",
                 "swipe_on_mobile": false,
-                "padding_top": 32,
+                "padding_top": 8,
                 "padding_bottom": 64
+            }
+        },
+        "rich_text_nxBgt9": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_fzKTF9": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "COLECCIÓN DE CALZADO",
+                        "heading_size": "h2"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_fzKTF9"
+            ],
+            "custom_css": [
+                ".content-container:after {box-shadow: none;}",
+                "h2.rich-text__heading {font-family: sigmarone;}"
+            ],
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "background-2",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 40
             }
         },
         "collage_ykDF6c": {
@@ -490,31 +553,21 @@
                 "product_3EJPM8",
                 "collection_b43Px3"
             ],
-            "custom_css": [
-                "div.collage-card.card-wrapper {\/*padding: 10px 10px;*\/ background-color: white; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; margin: 0px 0px;}",
-                "div.card-wrapper div.card__content {padding: 10px 10px 0;}",
-                "div.card-wrapper div.card__inner img {width: 100%; object-fit: cover; \/*padding: 10px;*\/}",
-                "div.card-wrapper div.card__inner {max-height: 330px;}",
-                "div.collage div.collage__item {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; background-color: white;}"
-            ],
+            "custom_css": [],
             "settings": {
-                "heading": "Colección de Calzado",
+                "heading": "",
                 "heading_size": "h1",
                 "desktop_layout": "left",
                 "mobile_layout": "collage",
                 "card_styles": "product-card-wrapper",
-                "color_scheme": "background-1",
-                "padding_top": 24,
-                "padding_bottom": 48
+                "color_scheme": "accent-2",
+                "padding_top": 40,
+                "padding_bottom": 0
             }
         },
         "featured_collection_9yiw9x": {
             "type": "featured-collection",
-            "custom_css": [
-                "div.collection ul li div.card--media {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; background-color: white;}",
-                "div.collection a.button {margin-top: 36px;}",
-                "div.collection ul li div.card--media div.card__content {padding: 10px 10px 0;}"
-            ],
+            "custom_css": [],
             "settings": {
                 "title": "",
                 "heading_size": "h2",
@@ -528,7 +581,7 @@
                 "show_view_all": true,
                 "view_all_style": "solid",
                 "enable_desktop_slider": false,
-                "color_scheme": "scheme-f3976f5c-c27c-4edf-87e8-ea84d2ff9b87",
+                "color_scheme": "accent-2",
                 "image_ratio": "square",
                 "image_shape": "default",
                 "show_secondary_image": true,
@@ -537,7 +590,7 @@
                 "enable_quick_add": false,
                 "columns_mobile": "2",
                 "swipe_on_mobile": false,
-                "padding_top": 32,
+                "padding_top": 8,
                 "padding_bottom": 64
             }
         },
@@ -766,7 +819,7 @@
                     "settings": {
                         "feature_title": "Envíos a todo el País",
                         "feature_text": "Desde Yopal para Colombia, realizamos envíos seguros y eficientes de 2 a 4 días hábiles, buscando siempre la satisfacción y conveniencia de nuestras clientas.",
-                        "feature_image": "shopify:\/\/shop_images\/truck-solid_1.svg",
+                        "feature_image": "shopify:\/\/shop_images\/truck-solid-pink.svg",
                         "feature_url": "",
                         "hide_image": false
                     }
@@ -776,7 +829,7 @@
                     "settings": {
                         "feature_title": "Compra Segura",
                         "feature_text": "Con nuestro sistema de pagos seguros y protegidos, puedes comprar con total confianza, sabiendo que tu satisfacción y seguridad es nuestra prioridad.",
-                        "feature_image": "shopify:\/\/shop_images\/shield-solid.svg",
+                        "feature_image": "shopify:\/\/shop_images\/shield-solid-pink.svg",
                         "feature_url": "",
                         "hide_image": false
                     }
@@ -786,7 +839,7 @@
                     "settings": {
                         "feature_title": "Garantía de Satisfacción",
                         "feature_text": "Ofrecemos una política de cambios y garantías justa y transparente, con 30 días de garantía para calzado, bolsos y carteras, asegurando tu satisfacción con cada compra.",
-                        "feature_image": "shopify:\/\/shop_images\/box-solid.svg",
+                        "feature_image": "shopify:\/\/shop_images\/box-solid-pink.svg",
                         "feature_url": "",
                         "hide_image": false
                     }
@@ -821,19 +874,19 @@
                 "feature_text_mt": 4,
                 "feature_icon_size": 42,
                 "feature_icon_size_mobile": 42,
-                "feature_bg": "#defff5",
-                "feature_border_color": "#001e45",
-                "feature_shadow_color": "#000000",
-                "feature_heading_color": "#001e45",
+                "feature_bg": "#fbe8ec",
+                "feature_border_color": "#dd1d1d",
+                "feature_shadow_color": "#dd1d1d",
+                "feature_heading_color": "#e5728e",
                 "feature_text_color": "#001e45",
                 "feature_icon_color": "#001e45",
-                "background_color": "#defff5",
+                "background_color": "#fbe8ec",
                 "background_gradient": "",
-                "border_color": "#000000",
+                "border_color": "#1773b0",
                 "margin_top": 0,
                 "margin_bottom": 0,
-                "padding_top": 16,
-                "padding_bottom": 16,
+                "padding_top": 24,
+                "padding_bottom": 24,
                 "padding_horizontal": 5,
                 "padding_horizontal_mobile": 1.5,
                 "full_width": false,
@@ -844,6 +897,7 @@
         },
         "image_banner_eqUm4p": {
             "type": "image-banner",
+            "disabled": true,
             "settings": {
                 "image": "shopify:\/\/shop_images\/Frame_120.png",
                 "image_overlay_opacity": 0,
@@ -864,14 +918,17 @@
         "background_video_hfhNFC",
         "image_banner",
         "rich_text_pixJXz",
-        "collection_list_qwxH4B",
         "rich_text_wD8Amm",
+        "collection_list_qwxH4B",
+        "rich_text_wqAtBN",
         "featured_product_bCxALJ",
         "featured_collection_RTGV7Y",
         "1707780353a22adb72",
         "slideshow_kafReh",
+        "rich_text_UrdbDG",
         "ce036a88-cf82-4e6b-8c31-7999946bdfcd",
         "featured_collection_zhYedF",
+        "rich_text_nxBgt9",
         "collage_ykDF6c",
         "featured_collection_9yiw9x",
         "slideshow_6NLcFq",
