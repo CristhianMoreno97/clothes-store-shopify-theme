@@ -101,13 +101,6 @@
         "rich_text_pixJXz": {
             "type": "rich-text",
             "blocks": {
-                "heading_6BjHQP": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "",
-                        "heading_size": "h2"
-                    }
-                },
                 "text_NeVVph": {
                     "type": "text",
                     "settings": {
@@ -116,10 +109,11 @@
                 }
             },
             "block_order": [
-                "heading_6BjHQP",
                 "text_NeVVph"
             ],
-            "custom_css": [],
+            "custom_css": [
+                "p {color: rgb(0, 30, 69);}"
+            ],
             "settings": {
                 "desktop_content_position": "center",
                 "content_alignment": "center",
@@ -194,6 +188,36 @@
                     "settings": {
                         "collection": "stilettos"
                     }
+                },
+                "featured_collection_Wr4ELK": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "billeteras"
+                    }
+                },
+                "featured_collection_hmK4AC": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "medias"
+                    }
+                },
+                "featured_collection_HKX7Lc": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "mor"
+                    }
+                },
+                "featured_collection_HR4itX": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "pantuflas"
+                    }
+                },
+                "featured_collection_9qNxpB": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "tenis"
+                    }
                 }
             },
             "block_order": [
@@ -202,7 +226,12 @@
                 "featured_collection_PTDqk3",
                 "featured_collection_CmDT4N",
                 "featured_collection_Lm9XkR",
-                "featured_collection_NEHb9X"
+                "featured_collection_NEHb9X",
+                "featured_collection_Wr4ELK",
+                "featured_collection_hmK4AC",
+                "featured_collection_HKX7Lc",
+                "featured_collection_HR4itX",
+                "featured_collection_9qNxpB"
             ],
             "custom_css": [
                 "ul.collection-list li h3 a {text-align: center; font-size: 16px;}",
@@ -213,10 +242,10 @@
                 "title": "",
                 "heading_size": "h2",
                 "image_ratio": "square",
-                "columns_desktop": 6,
+                "columns_desktop": 7,
                 "color_scheme": "accent-1",
                 "show_view_all": false,
-                "columns_mobile": "1",
+                "columns_mobile": "2",
                 "swipe_on_mobile": false,
                 "padding_top": 24,
                 "padding_bottom": 40
@@ -352,7 +381,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/coleccion-calzado.jpg",
                         "heading": "",
-                        "heading_size": "h1",
+                        "heading_size": "h2",
                         "subheading": "<strong>Zapatos y bolsos que te hacen única. ¡Explora nuestras colecciones exclusivas!<\/strong>",
                         "button_label": "",
                         "link": "",
@@ -460,7 +489,7 @@
             "custom_css": [],
             "settings": {
                 "heading": "",
-                "heading_size": "h1",
+                "heading_size": "h2",
                 "desktop_layout": "left",
                 "mobile_layout": "collage",
                 "card_styles": "product-card-wrapper",
@@ -556,7 +585,7 @@
             "custom_css": [],
             "settings": {
                 "heading": "",
-                "heading_size": "h1",
+                "heading_size": "h2",
                 "desktop_layout": "left",
                 "mobile_layout": "collage",
                 "card_styles": "product-card-wrapper",
