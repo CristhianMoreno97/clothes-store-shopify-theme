@@ -1,0 +1,213 @@
+{% schema %}
+  {
+    "name": "Custom layout",
+    "tag": "section",
+    "class": "section",
+    "presets": [{"name": "Default Custom Layout"}],
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "id": "texto_titulo",
+        "type": "text",
+        "label": "Titulo"
+      },
+      {
+        "type": "color_scheme",
+        "id": "title_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "id": "imagen_principal",
+        "type": "image_picker",
+        "label": "Imagen principal"
+      },
+      {
+        "id": "altura_imagen",
+        "type": "number",
+        "label": "Altura banner (px)",
+        "default": 300
+      },
+      {
+        "id": "title_padding",
+        "type": "number",
+        "label": "Espaciado del titulo (px)",
+        "default": 20
+      },
+      {
+        "id": "texto_titulo_izquierda",
+        "type": "text",
+        "label": "Titulo columna izquierda"
+      },
+      {
+        "id": "texto_columna_izquierda",
+        "type": "richtext",
+        "label": "Texto para la columna de la izquierda"
+      },
+      {
+        "id": "imagen_columna_izquierda",
+        "type": "image_picker",
+        "label": "Imagen para la columna de la izquierda"
+      },
+      {
+        "id": "altura_imagen_izquierda",
+        "type": "number",
+        "label": "Altura imagen izquierda (px)",
+        "default": 300
+      },
+      {
+        "id": "texto_titulo_derecha",
+        "type": "text",
+        "label": "Titulo columna derecha"
+      },
+      {
+        "id": "texto_columna_derecha",
+        "type": "richtext",
+        "label": "Texto para la columna de la derecha"
+      },
+      {
+        "id": "imagen_columna_derecha",
+        "type": "image_picker",
+        "label": "Imagen para la columna de la derecha"
+      },
+      {
+        "id": "altura_imagen_derecha",
+        "type": "number",
+        "label": "Altura imagen derecha (px)",
+        "default": 300
+      },
+      {
+        "type": "select",
+        "id": "content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:sections.rich-text.settings.content_alignment.options__2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:sections.rich-text.settings.content_alignment.options__3.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.rich-text.settings.content_alignment.label"
+      }
+    ]
+  }
+  {% endschema %}
+  
+  {% stylesheet %}
+    /* .columna {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    } */
+  
+    .contenedor-banner-principal {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+    }
+     
+    .contenedor-principal {
+      padding: 40px 200px;
+    }
+  
+    .contenedor-columnas {
+      display:flex;
+      background-color: white;
+      border-radius: 28px;
+    }
+  
+    .columna {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 20px;
+    }
+  
+    @media screen and (max-width: 1200px) {
+      .contenedor-principal {
+        padding: 40px 80px;
+      }
+    }
+  {% endstylesheet %}
+  
+  {% assign banner_image_url = section.settings.imagen_principal | image_url: width: 2000 %}
+  {% assign image_style = 'width: 100%; object-fit: cover; height:'
+    | append: section.settings.altura_imagen
+    | append: 'px'
+  %}
+  
+  {% assign title_style = 'style="padding: 0 ' | append: section.settings.title_padding | append: 'px;"' %}
+  
+  {% assign image_url_c_derecha = section.settings.imagen_columna_derecha | image_url: width: 800 %}
+  {% assign image_style_c_derecha = 'width: 100%; border-radius: 20px; object-fit: cover; height:'
+    | append: section.settings.altura_imagen_derecha
+    | append: 'px'
+  %}
+  
+  {% assign image_url_c_izquierda = section.settings.imagen_columna_izquierda | image_url: width: 800 %}
+  {% assign image_style_c_izquierda = 'width: 100%; border-radius: 20px; object-fit: cover;height:'
+    | append: section.settings.altura_imagen_izquierda
+    | append: 'px'
+  %}
+  
+  <div>
+    <div class="contenedor-banner-principal">
+      {% if section.settings.imagen_principal %}
+        {{ banner_image_url | image_tag: style: image_style }}
+      {% endif %}
+      {% if section.settings.texto_titulo %}
+        <div class="color-{{ section.settings.title_color_scheme }} gradient">
+          <h2 class="titulo" {{ title_style }}>{{ section.settings.texto_titulo }}</h2>
+        </div>
+      {% endif %}
+    </div>
+    <div class="contenedor-principal color-{{ section.settings.color_scheme }}">
+      <div class="contenedor-columnas">
+        <div class="columna {{ section.settings.content_alignment }}">
+          {% if section.settings.texto_titulo_izquierda %}
+            <h3 style="font-family: sigmarone;">{{ section.settings.texto_titulo_izquierda }}</h3>
+          {% endif %}
+          {{ section.settings.texto_columna_izquierda }}
+          {% if section.settings.imagen_columna_izquierda %}
+            {{ image_url_c_izquierda | image_tag: style: image_style_c_izquierda }}
+          {% endif %}
+        </div>
+        <div class="linea-vertical"></div>
+        {% if section.settings.imagen_columna_derecha or section.settings.texto_columna_derecha != '' or section.settings.texto_titulo_derecha != '' %}
+          <div class="columna {{ section.settings.content_alignment }}">
+            {% if section.settings.texto_titulo_derecha %}
+              <h3 style="font-family: sigmarone;">{{ section.settings.texto_titulo_derecha }}</h3>
+            {% endif %}
+            {% if section.settings.texto_columna_derecha %}
+              {{ section.settings.texto_columna_derecha }}
+            {% endif %}
+            {% if section.settings.imagen_columna_derecha %}
+              {{ image_url_c_derecha | image_tag: style: image_style_c_derecha }}
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
