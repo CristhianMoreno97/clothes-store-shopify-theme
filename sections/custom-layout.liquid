@@ -208,13 +208,22 @@
 
   @media screen and (max-width: 768px) {
     .contenedor-principal {
-      padding: 0 10px;
+      padding: 0 20px;
+    }
+
+    .contenedor-columnas {
+      flex-direction: column;
+      gap: 10px
     }
   }
 
   @media screen and (max-width: 640px) {
     .contenedor-principal {
       padding: 0 10px;
+    }
+    .contenedor-columnas {
+      flex-direction: column;
+      gap: 10px
     }
   }
 {% endstylesheet %}
