@@ -13,6 +13,18 @@
     },
     "settings": [
       {
+        "id": "espaciado_arriba",
+        "type": "number",
+        "label": "Espaciado arriba (px)",
+        "default": 20
+      },
+      {
+        "id": "espaciado_abajo",
+        "type": "number",
+        "label": "Espaciado abajo (px)",
+        "default": 20
+      },
+      {
         "id": "texto_titulo",
         "type": "text",
         "label": "Titulo"
@@ -22,14 +34,12 @@
         "id": "title_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "background-1"
-      },
-      {
+      }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "background-1"
-      },
-      {
+      }, {
         "id": "imagen_principal",
         "type": "image_picker",
         "label": "Imagen principal"
@@ -157,7 +167,7 @@
   }
 
   .contenedor-principal {
-    padding: 40px 200px;
+    padding: 0 200px;
     display: flex;
     justify-content: center;
   }
@@ -186,31 +196,34 @@
 
   @media screen and (max-width: 1280px) {
     .contenedor-principal {
-      padding: 40px 100px;
+      padding: 0 100px;
     }
   }
 
   @media screen and (max-width: 1024px) {
     .contenedor-principal {
-      padding: 40px;
+      padding: 0 40px;
     }
   }
 
   @media screen and (max-width: 768px) {
     .contenedor-principal {
-      padding: 40px 10px;
+      padding: 0 10px;
     }
   }
 
   @media screen and (max-width: 640px) {
     .contenedor-principal {
-      padding: 40px 0;
+      padding: 0 10px;
     }
   }
 {% endstylesheet %}
 
 {% assign banner_image_url = section.settings.imagen_principal | image_url: width: 2000 %}
 {% assign image_style = 'width: 100%; object-fit: cover; height:' | append: section.settings.altura_imagen | append: 'px'
+%}
+
+{% assign contenedor_principal_columnas_style = 'style="margin: '  | append: section.settings.espaciado_arriba | append: 'px 0px ' | append: section.settings.espaciado_abajo | append: 'px;"'
 %}
 
 {% assign title_style = 'style="padding: 0 ' | append: section.settings.title_padding | append: 'px;"' %}
@@ -262,7 +275,7 @@
   {% endif %}
 </div>
 <div class="contenedor-principal color-{{ section.settings.color_scheme }}">
-  <div class="contenedor-principal-columnas">
+  <div class="contenedor-principal-columnas" {{ contenedor_principal_columnas_style }}>
 
     {% if contenido_disponible_izquierda %}
       <div class="contenedor-columnas">
