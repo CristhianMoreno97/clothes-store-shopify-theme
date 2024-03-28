@@ -2,192 +2,130 @@
     "sections": {
         "main": {
             "type": "main-page",
+            "disabled": true,
+            "custom_css": [
+                "h1,h2 {font-family: sigmarone;}"
+            ],
             "settings": {
                 "padding_top": 28,
                 "padding_bottom": 28
             }
         },
-        "image_with_text_7PgEiR": {
-            "type": "image-with-text",
-            "blocks": {
-                "heading_xXFD4a": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "De la Virtualidad a la Realidad: La Historia de Re-PUPI",
-                        "heading_size": "h2"
-                    }
-                },
-                "text_KrnXbg": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Re-PUPI surgió en un momento de adversidad, cuando el mundo se vio obligado a cerrar las puertas de hogares, negocios y establecimientos. En medio de esta situación, identificamos la oportunidad de iniciar un nuevo sueño. En mayo de 2020, dimos inicio a una tienda virtual que ofrecía zapatos y bolsos a través de plataformas como Instagram, Facebook y WhatsApp. La respuesta positiva que recibimos nos llevó a dar el siguiente paso: el 15 de septiembre de 2021, inauguramos nuestra tienda física en la ciudad de Yopal. Desde entonces, nos hemos destacado por ofrecer productos diferentes, innovadores, de alta calidad y exclusivos.<\/p>",
-                        "text_style": "body"
-                    }
-                },
-                "button_MXaXBT": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "",
-                        "button_link": "",
-                        "button_style_secondary": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading_xXFD4a",
-                "text_KrnXbg",
-                "button_MXaXBT"
-            ],
+        "custom_layout_YnMdUm": {
+            "type": "custom-layout",
             "settings": {
-                "image": "shopify:\/\/shop_images\/repupi-historia-3.jpg",
-                "height": "adapt",
-                "desktop_image_width": "small",
-                "layout": "image_first",
-                "desktop_content_position": "top",
-                "desktop_content_alignment": "left",
-                "content_layout": "no-overlap",
-                "section_color_scheme": "",
-                "color_scheme": "",
-                "image_behavior": "none",
-                "mobile_content_alignment": "left",
-                "padding_top": 36,
-                "padding_bottom": 36
+                "espaciado_arriba": 40,
+                "espaciado_abajo": 20,
+                "ver_titulo_animado": false,
+                "texto_titulo_h1": "",
+                "texto_titulo": "Conócenos",
+                "title_color_scheme": "background-2",
+                "color_scheme": "accent-2",
+                "imagen_principal": "shopify:\/\/shop_images\/repupi-historia-2.jpg",
+                "altura_imagen": 500,
+                "title_padding_h1": 20,
+                "title_padding": 20,
+                "content_alignment": "left",
+                "texto_titulo_izquierda": "¿QUIÉNES SOMOS?",
+                "texto_columna_izquierda": "<p>Somos una tienda local en Casanare dedicada a ofrecer una extensa gama de zapatos y bolsos para mujeres que desean destacar y expresar su estilo con productos innovadores y a la moda.<\/p>",
+                "imagen_columna_izquierda": "shopify:\/\/shop_images\/repupi-team.jpg",
+                "altura_imagen_izquierda": 500,
+                "texto_titulo_derecha": "",
+                "texto_columna_derecha": "",
+                "altura_imagen_derecha": 300,
+                "texto_titulo_izquierda_abajo": "",
+                "texto_columna_izquierda_abajo": "",
+                "altura_imagen_izquierda_abajo": 300,
+                "texto_titulo_derecha_abajo": "",
+                "texto_columna_derecha_abajo": "",
+                "altura_imagen_derecha_abajo": 300
             }
         },
-        "image_with_text_MNGckd": {
-            "type": "image-with-text",
-            "blocks": {
-                "heading_GEepEa": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Misión",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_WKYNag": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Nuestro propósito es brindar felicidad a la mujer colombiana mediante productos y servicios que la hagan sentir poderosa, segura, sexy y exclusiva.<\/p>",
-                        "text_style": "body"
-                    }
-                },
-                "button_FmCdV7": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "",
-                        "button_link": "",
-                        "button_style_secondary": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading_GEepEa",
-                "text_WKYNag",
-                "button_FmCdV7"
-            ],
+        "custom_layout_dUUipT": {
+            "type": "custom-layout",
             "settings": {
-                "image": "shopify:\/\/shop_images\/repupi-team2.jpg",
-                "height": "adapt",
-                "desktop_image_width": "small",
-                "layout": "text_first",
-                "desktop_content_position": "top",
-                "desktop_content_alignment": "left",
-                "content_layout": "no-overlap",
-                "section_color_scheme": "",
-                "color_scheme": "",
-                "image_behavior": "none",
-                "mobile_content_alignment": "left",
-                "padding_top": 36,
-                "padding_bottom": 36
+                "espaciado_arriba": 20,
+                "espaciado_abajo": 20,
+                "ver_titulo_animado": false,
+                "texto_titulo_h1": "",
+                "texto_titulo": "",
+                "title_color_scheme": "background-1",
+                "color_scheme": "accent-2",
+                "altura_imagen": 500,
+                "title_padding_h1": 20,
+                "title_padding": 17,
+                "content_alignment": "left",
+                "texto_titulo_izquierda": "De la Virtualidad a la Realidad: La Historia de Re-PUPI",
+                "texto_columna_izquierda": "<p>Re-PUPI surgió en un momento de adversidad, cuando el mundo se vio obligado a cerrar las puertas de hogares, negocios y establecimientos. En medio de esta situación, identificamos la oportunidad de iniciar un nuevo sueño. En mayo de 2020, dimos inicio a una tienda virtual que ofrecía zapatos y bolsos a través de plataformas como Instagram, Facebook y WhatsApp. La respuesta positiva que recibimos nos llevó a dar el siguiente paso: el 15 de septiembre de 2021, inauguramos nuestra tienda física en la ciudad de Yopal. Desde entonces, nos hemos destacado por ofrecer productos diferentes, innovadores, de alta calidad y exclusivos.<\/p>",
+                "imagen_columna_izquierda": "shopify:\/\/shop_images\/WhatsApp_Image_2024-02-05_at_11.32.56_AM.jpg",
+                "altura_imagen_izquierda": 500,
+                "texto_titulo_derecha": "",
+                "texto_columna_derecha": "",
+                "altura_imagen_derecha": 300,
+                "texto_titulo_izquierda_abajo": "",
+                "texto_columna_izquierda_abajo": "",
+                "altura_imagen_izquierda_abajo": 350,
+                "texto_titulo_derecha_abajo": "",
+                "texto_columna_derecha_abajo": "",
+                "altura_imagen_derecha_abajo": 300
             }
         },
-        "image_with_text_wyemBk": {
-            "type": "image-with-text",
-            "blocks": {
-                "heading_mTUEyQ": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Visión",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_fPXBkN": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Para el año 2030, nos visualizamos como una marca consolidada con presencia en las principales ciudades del país, reconocida por su calidad, exclusividad, atención excepcional y ambientes acogedores que brindan experiencias de compra inolvidables.<\/p>",
-                        "text_style": "body"
-                    }
-                },
-                "button_WFyHNX": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "",
-                        "button_link": "",
-                        "button_style_secondary": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading_mTUEyQ",
-                "text_fPXBkN",
-                "button_WFyHNX"
-            ],
+        "custom_layout_wLP9ec": {
+            "type": "custom-layout",
             "settings": {
-                "image": "shopify:\/\/shop_images\/repupi-historia-2.jpg",
-                "height": "small",
-                "desktop_image_width": "medium",
-                "layout": "image_first",
-                "desktop_content_position": "top",
-                "desktop_content_alignment": "left",
-                "content_layout": "no-overlap",
-                "section_color_scheme": "",
-                "color_scheme": "",
-                "image_behavior": "none",
-                "mobile_content_alignment": "left",
-                "padding_top": 36,
-                "padding_bottom": 36
+                "espaciado_arriba": 20,
+                "espaciado_abajo": 20,
+                "ver_titulo_animado": false,
+                "texto_titulo_h1": "",
+                "texto_titulo": "",
+                "title_color_scheme": "",
+                "color_scheme": "accent-2",
+                "altura_imagen": 300,
+                "title_padding_h1": 20,
+                "title_padding": 20,
+                "content_alignment": "left",
+                "texto_titulo_izquierda": "",
+                "texto_columna_izquierda": "",
+                "altura_imagen_izquierda": 300,
+                "texto_titulo_derecha": "",
+                "texto_columna_derecha": "",
+                "altura_imagen_derecha": 300,
+                "texto_titulo_izquierda_abajo": "",
+                "texto_columna_izquierda_abajo": "",
+                "imagen_columna_izquierda_abajo": "shopify:\/\/shop_images\/repupi-team2.jpg",
+                "altura_imagen_izquierda_abajo": 300,
+                "texto_titulo_derecha_abajo": "Misión",
+                "texto_columna_derecha_abajo": "<p>Nuestro propósito es brindar felicidad a la mujer colombiana mediante productos y servicios que la hagan sentir poderosa, segura, sexy y exclusiva.<\/p>",
+                "altura_imagen_derecha_abajo": 300
             }
         },
-        "rich_text_nJKbGD": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_dF9WgE": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "",
-                        "heading_size": "h2"
-                    }
-                },
-                "text_m9kRVL": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Seguiremos escribiendo nuestra historia con el apoyo incondicional que ustedes nos brindan.<\/p>"
-                    }
-                },
-                "button_hiNrXm": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "",
-                        "button_link": "",
-                        "button_style_secondary": false,
-                        "button_label_2": "",
-                        "button_link_2": "",
-                        "button_style_secondary_2": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading_dF9WgE",
-                "text_m9kRVL",
-                "button_hiNrXm"
-            ],
+        "custom_layout_4QXCYx": {
+            "type": "custom-layout",
             "settings": {
-                "desktop_content_position": "left",
-                "content_alignment": "center",
-                "color_scheme": "",
-                "full_width": true,
-                "padding_top": 0,
-                "padding_bottom": 52
+                "espaciado_arriba": 20,
+                "espaciado_abajo": 20,
+                "ver_titulo_animado": false,
+                "texto_titulo_h1": "",
+                "texto_titulo": "",
+                "title_color_scheme": "",
+                "color_scheme": "accent-2",
+                "altura_imagen": 300,
+                "title_padding_h1": 20,
+                "title_padding": 20,
+                "content_alignment": "left",
+                "texto_titulo_izquierda": "",
+                "texto_columna_izquierda": "",
+                "imagen_columna_izquierda": "shopify:\/\/shop_images\/repupi-historia-3.jpg",
+                "altura_imagen_izquierda": 300,
+                "texto_titulo_derecha": "Visión",
+                "texto_columna_derecha": "<p>Para el año 2030, nos visualizamos como una marca consolidada con presencia en las principales ciudades del país, reconocida por su calidad, exclusividad, atención excepcional y ambientes acogedores que brindan experiencias de compra inolvidables.<\/p>",
+                "altura_imagen_derecha": 300,
+                "texto_titulo_izquierda_abajo": "",
+                "texto_columna_izquierda_abajo": "",
+                "altura_imagen_izquierda_abajo": 300,
+                "texto_titulo_derecha_abajo": "",
+                "texto_columna_derecha_abajo": "",
+                "altura_imagen_derecha_abajo": 300
             }
         },
         "rich_text_7PfwhX": {
@@ -197,13 +135,13 @@
                     "type": "heading",
                     "settings": {
                         "heading": "Conéctate con Nosotros",
-                        "heading_size": "h1"
+                        "heading_size": "h2"
                     }
                 },
                 "text_f3X8aT": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Únete a nuestra cominidad en Instagram y Facebook para no perderte ninguna novedad.<\/p>"
+                        "text": "<p>Únete a nuestra cominidad en Instagram y Facebook para no perderte ninguna novedad.<\/p><p>Síguenos en<strong> Instagram @re.pupi<\/strong><\/p><p><\/p>"
                     }
                 },
                 "button_mK6weW": {
@@ -224,12 +162,13 @@
                 "button_mK6weW"
             ],
             "custom_css": [
-                ".content-container:after {box-shadow: none;}"
+                ".content-container:after {box-shadow: none;}",
+                "h1,h2 {font-family: sigmarone;}"
             ],
             "settings": {
                 "desktop_content_position": "left",
                 "content_alignment": "left",
-                "color_scheme": "",
+                "color_scheme": "accent-2",
                 "full_width": true,
                 "padding_top": 40,
                 "padding_bottom": 0
@@ -241,9 +180,10 @@
                 "instafeed_app_block_YBFjBp": {
                     "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
                     "settings": {
-                        "title": "Síguenos en Instagram @re.pupi",
+                        "title": "",
                         "title_color": "",
                         "alignment": "left",
+                        "margin_top": 32,
                         "margin_bottom": 32,
                         "html_area": ""
                     }
@@ -252,61 +192,19 @@
             "block_order": [
                 "instafeed_app_block_YBFjBp"
             ],
+            "custom_css": [],
             "settings": {
                 "include_margins": true
-            }
-        },
-        "rich_text_7C8aVa": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_mcWAhC": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "INFORMACIÓN DE CONTACTO",
-                        "heading_size": "h2"
-                    }
-                },
-                "text_hmYRrR": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Teléfono y WhatsApp 3227308414<br\/>Correo Electrónico <a>re.pupi@hotmail.com<br\/><\/a>Dirección Cra 22 #10 A 29, Yopal Centro<br\/>Facebook Re-PUPI<br\/>Instagram @re.pupi<\/p>"
-                    }
-                },
-                "button_ECjc4C": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "",
-                        "button_link": "",
-                        "button_style_secondary": false,
-                        "button_label_2": "",
-                        "button_link_2": "",
-                        "button_style_secondary_2": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading_mcWAhC",
-                "text_hmYRrR",
-                "button_ECjc4C"
-            ],
-            "settings": {
-                "desktop_content_position": "left",
-                "content_alignment": "left",
-                "color_scheme": "",
-                "full_width": true,
-                "padding_top": 0,
-                "padding_bottom": 52
             }
         }
     },
     "order": [
         "main",
-        "image_with_text_7PgEiR",
-        "image_with_text_MNGckd",
-        "image_with_text_wyemBk",
-        "rich_text_nJKbGD",
+        "custom_layout_YnMdUm",
+        "custom_layout_dUUipT",
+        "custom_layout_wLP9ec",
+        "custom_layout_4QXCYx",
         "rich_text_7PfwhX",
-        "1708693448413071f0",
-        "rich_text_7C8aVa"
+        "1708693448413071f0"
     ]
 }
