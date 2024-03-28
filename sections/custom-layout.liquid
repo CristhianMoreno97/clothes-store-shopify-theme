@@ -25,11 +25,20 @@
         "default": 20
       },
       {
+        "id": "ver_titulo_animado",
+        "label": "Ver titulo animado",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "texto_titulo_h1",
+        "type": "text",
+        "label": "Titulo H1"
+      }, {
         "id": "texto_titulo",
         "type": "text",
         "label": "Titulo"
-      },
-      {
+      }, {
         "type": "color_scheme",
         "id": "title_color_scheme",
         "label": "t:sections.all.colors.label",
@@ -48,6 +57,11 @@
         "type": "number",
         "label": "Altura banner (px)",
         "default": 300
+      }, {
+        "id": "title_padding_h1",
+        "type": "number",
+        "label": "Espaciado del titulo (px)",
+        "default": 20
       }, {
         "id": "title_padding",
         "type": "number",
@@ -166,6 +180,13 @@
     padding: 20px 0;
   }
 
+  .titulo-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
   .contenedor-principal {
     padding: 0 200px;
     display: flex;
@@ -195,6 +216,22 @@
   }
 
   @media screen and (max-width: 1280px) {
+    :root {
+      --r: 60px;
+      /* glow radius */
+      --o: 25px;
+    }
+    .contenedor-principal {
+      padding: 0 100px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    :root {
+      --r: 60px;
+      /* glow radius */
+      --o: 25px;
+    }
     .contenedor-principal {
       padding: 0 100px;
     }
@@ -207,6 +244,12 @@
   }
 
   @media screen and (max-width: 768px) {
+    :root {
+      --r: 40px;
+      /* glow radius */
+      --o: 10px;
+      /* glow offset */
+    }
     .contenedor-principal {
       padding: 0 20px;
     }
@@ -218,6 +261,12 @@
   }
 
   @media screen and (max-width: 640px) {
+    :root {
+      --r: 25px;
+      /* glow radius */
+      --o: 10px;
+      /* glow offset */
+    }
     .contenedor-principal {
       padding: 0 10px;
     }
@@ -226,16 +275,97 @@
       gap: 10px
     }
   }
+  :root {
+    --d: 4s;
+    /* duration */
+    --bg: white;
+    /* background color */
+  }
+
+  .body-anim {
+    font: 15vw / 1 'sigmarone';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    text-align: center;
+    background: var(--bg);
+    color: snow;
+    min-height: 200px;
+    max-height: 300px;
+    margin-top: 32px;
+  }
+
+  .span-anim {
+    animation: glow var(--d) ease-in-out both infinite;
+  }
+
+  /* Manually setting animation delays for each child */
+  .span-anim:nth-child(1) {
+    animation-delay: calc(1 / 7 * -2s);
+  }
+
+  .span-anim:nth-child(2) {
+    animation-delay: calc(2 / 7 * -2s);
+  }
+
+  .span-anim:nth-child(3) {
+    animation-delay: calc(3 / 7 * -2s);
+  }
+
+  .span-anim:nth-child(4) {
+    animation-delay: calc(4 / 7 * -2s);
+  }
+
+  .span-anim:nth-child(5) {
+    animation-delay: calc(5 / 7 * -2s);
+  }
+
+  .span-anim:nth-child(6) {
+    animation-delay: calc(6 / 7 * -2s);
+  }
+
+  .span-anim:nth-child(7) {
+    animation-delay: calc(7 / 7 * -2s);
+  }
+
+  @keyframes glow {
+
+    0%,
+    100% {
+      text-shadow: 
+      0 0 calc(var(--r)/6) #F2B9C6, 
+      0 calc(-1 * var(--o)) var(--r) #F6D0D9, 
+      calc(-1 * var(--o)) var(--o) var(--r) #EA8AA1, 
+      var(--o) var(--o) var(--r) cyan;
+    }
+
+    33% {
+      text-shadow: 
+      0 0 calc(var(--r)/6) #EEA1B3, 
+      0 calc(-1 * var(--o)) var(--r) #EA8AA1, 
+      calc(-1 * var(--o)) var(--o) var(--r) cyan, 
+      var(--o) var(--o) var(--r) #F6D0D9;
+    }
+
+    66% {
+      text-shadow: 0 0 calc(var(--r)/6) #F2B9C6, 
+      0 calc(-1 * var(--o)) var(--r) cyan, 
+      calc(-1 * var(--o)) var(--o) var(--r) #F6D0D9, 
+      var(--o) var(--o) var(--r) #EA8AA1;
+    }
+  }
 {% endstylesheet %}
 
 {% assign banner_image_url = section.settings.imagen_principal | image_url: width: 2000 %}
 {% assign image_style = 'width: 100%; object-fit: cover; height:' | append: section.settings.altura_imagen | append: 'px'
 %}
 
-{% assign contenedor_principal_columnas_style = 'style="margin: '  | append: section.settings.espaciado_arriba | append: 'px 0px ' | append: section.settings.espaciado_abajo | append: 'px;"'
+{% assign contenedor_principal_columnas_style = 'style="margin: ' | append: section.settings.espaciado_arriba | append: 'px 0px ' | append: section.settings.espaciado_abajo | append: 'px;"'
 %}
 
 {% assign title_style = 'style="padding: 0 ' | append: section.settings.title_padding | append: 'px;"' %}
+{% assign title_style_h1 = 'style="padding: 0 ' | append: section.settings.title_padding_h1 | append: 'px;"' %}
 
 {% assign image_url_c_derecha = section.settings.imagen_columna_derecha | image_url: width: 800 %}
 {% assign image_style_c_derecha = 'width: 100%; border-radius: 20px; object-fit: cover; height:' | append: section.settings.altura_imagen_derecha | append: 'px'
@@ -277,8 +407,24 @@
   {% if section.settings.imagen_principal %}
     {{ banner_image_url | image_tag: style: image_style }}
   {% endif %}
+  {% if section.settings.ver_titulo_animado %}
+    <div class="body-anim">
+      <span class="span-anim">R</span>
+      <span class="span-anim">e</span>
+      <span class="span-anim">-</span>
+      <span class="span-anim">P</span>
+      <span class="span-anim">u</span>
+      <span class="span-anim">p</span>
+      <span class="span-anim">i</span>
+    </div>
+  {% endif %}
+  {% if section.settings.texto_titulo_h1 %}
+    <div class="color-{{ section.settings.title_color_scheme }} gradient container-titulo-h1">
+      <h1 class="titulo-h1" {{ title_style_h1 }}>{{ section.settings.texto_titulo_h1 }}</h1>
+    </div>
+  {% endif %}
   {% if section.settings.texto_titulo %}
-    <div class="color-{{ section.settings.title_color_scheme }} gradient">
+    <div class="color-{{ section.settings.title_color_scheme }} gradient container-titulo">
       <h2 class="titulo" {{ title_style }}>{{ section.settings.texto_titulo }}</h2>
     </div>
   {% endif %}
