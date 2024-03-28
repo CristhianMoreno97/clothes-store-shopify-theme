@@ -230,7 +230,7 @@
     :root {
       --r: 60px;
       /* glow radius */
-      --o: 25px;
+      --o: 20px;
     }
     .contenedor-principal {
       padding: 0 100px;
@@ -276,7 +276,9 @@
     }
   }
   :root {
-    --d: 4s;
+
+    /* glow offset */
+    --d: 8s;
     /* duration */
     --bg: white;
     /* background color */
@@ -336,23 +338,23 @@
       text-shadow: 
       0 0 calc(var(--r)/6) #F2B9C6, 
       0 calc(-1 * var(--o)) var(--r) #F6D0D9, 
-      calc(-1 * var(--o)) var(--o) var(--r) #EA8AA1, 
-      var(--o) var(--o) var(--r) cyan;
+      calc(-1 * var(--o)) var(--o) var(--r) #9747FF, 
+      var(--o) var(--o) var(--r) #FF6347;
     }
 
     33% {
       text-shadow: 
       0 0 calc(var(--r)/6) #EEA1B3, 
-      0 calc(-1 * var(--o)) var(--r) #EA8AA1, 
-      calc(-1 * var(--o)) var(--o) var(--r) cyan, 
+      0 calc(-1 * var(--o)) var(--r) #9747FF, 
+      calc(-1 * var(--o)) var(--o) var(--r) #FF6347, 
       var(--o) var(--o) var(--r) #F6D0D9;
     }
 
     66% {
       text-shadow: 0 0 calc(var(--r)/6) #F2B9C6, 
-      0 calc(-1 * var(--o)) var(--r) cyan, 
+      0 calc(-1 * var(--o)) var(--r) #FF6347, 
       calc(-1 * var(--o)) var(--o) var(--r) #F6D0D9, 
-      var(--o) var(--o) var(--r) #EA8AA1;
+      var(--o) var(--o) var(--r) #9747FF;
     }
   }
 {% endstylesheet %}
