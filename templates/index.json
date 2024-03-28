@@ -1,5 +1,38 @@
 {
     "sections": {
+        "custom_layout_etePcY": {
+            "type": "custom-layout",
+            "disabled": true,
+            "custom_css": [],
+            "settings": {
+                "espaciado_arriba": 20,
+                "espaciado_abajo": 20,
+                "ver_titulo_animado": false,
+                "texto_titulo_h1": "",
+                "texto_titulo": "tiyulo",
+                "title_color_scheme": "background-2",
+                "color_scheme": "accent-2",
+                "imagen_principal": "shopify:\/\/shop_images\/repupi-historia-3.jpg",
+                "altura_imagen": 400,
+                "title_padding_h1": 20,
+                "title_padding": 20,
+                "content_alignment": "left",
+                "texto_titulo_izquierda": "¿quienes somos?",
+                "texto_columna_izquierda": "<p>This page is temporarily unavailable because a device from your location is sending large amounts of web requests. Visitors from other locations can still view the page.  What can I do? If you're a visitor to this store Please try again in a couple minutes by refreshing the page.  If you're the owner of this store Try again in a couple minutes by refreshing the page. If you’re still experiencing the issue, please contact Shopify Support for more information.<\/p>",
+                "imagen_columna_izquierda": "shopify:\/\/shop_images\/repupi-team2.jpg",
+                "altura_imagen_izquierda": 500,
+                "texto_titulo_derecha": "titulo",
+                "texto_columna_derecha": "<p>This page is temporarily unavailable because a device from your location is sending large amounts of web requests. Visitors from other locations can still view the page.  What can I do? If you're a visitor to this store Please try again in a couple minutes by refreshing the page.  If you're the owner of this store Try again in a couple minutes by refreshing the page. If you’re still experiencing the issue, please contact Shopify Support for more information.<\/p>",
+                "imagen_columna_derecha": "shopify:\/\/shop_images\/repupi-team.jpg",
+                "altura_imagen_derecha": 300,
+                "texto_titulo_izquierda_abajo": "",
+                "texto_columna_izquierda_abajo": "",
+                "altura_imagen_izquierda_abajo": 300,
+                "texto_titulo_derecha_abajo": "",
+                "texto_columna_derecha_abajo": "",
+                "altura_imagen_derecha_abajo": 300
+            }
+        },
         "background_video_cNgL4W": {
             "type": "background-video",
             "blocks": {
@@ -20,6 +53,7 @@
             "block_order": [
                 "video_k77JTK"
             ],
+            "disabled": true,
             "settings": {}
         },
         "background_video_hfhNFC": {
@@ -80,12 +114,13 @@
                 "heading",
                 "button"
             ],
+            "disabled": true,
             "custom_css": [
                 ".banner__heading {font-family: \"sigmarone\", sans-serif;}",
                 ".banner__text {color: white; font-family: \"sigmarone\", sans-serif;}"
             ],
             "settings": {
-                "image": "shopify:\/\/shop_images\/repupi-interior-1-qa.jpg",
+                "image": "shopify:\/\/shop_images\/coleccion-calzado.jpg",
                 "image_overlay_opacity": 10,
                 "image_height": "medium",
                 "desktop_content_position": "bottom-right",
@@ -98,29 +133,37 @@
                 "show_text_below": false
             }
         },
-        "rich_text_pixJXz": {
-            "type": "rich-text",
-            "blocks": {
-                "text_NeVVph": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Explora nuestra colección y descubre por qué somos la elección preferida para mujeres que buscan <strong>calzado, bolsos y accesorios<\/strong> con un toque de innovación y exclusividad. <strong>Envíos desde Yopal a todo el país<\/strong>.<\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "text_NeVVph"
-            ],
+        "custom_layout_zW3Y7Y": {
+            "type": "custom-layout",
             "custom_css": [
-                "p {color: rgb(0, 30, 69);}"
+                "h1 {font-family: sigmarone; text-align: center; margin: 20px 0 0 0; font-size: 2.8rem;}",
+                "h2 {margin: 10px 0; font-size: 2.8rem;}",
+                ".container-titulo-h1 {background-color: transparent;}"
             ],
             "settings": {
-                "desktop_content_position": "center",
+                "espaciado_arriba": 20,
+                "espaciado_abajo": 40,
+                "ver_titulo_animado": true,
+                "texto_titulo_h1": "Tienda de Calzado y Accesorios para Mujer",
+                "texto_titulo": "",
+                "title_color_scheme": "",
+                "color_scheme": "",
+                "altura_imagen": 300,
+                "title_padding_h1": 20,
+                "title_padding": 20,
                 "content_alignment": "center",
-                "color_scheme": "accent-2",
-                "full_width": true,
-                "padding_top": 16,
-                "padding_bottom": 32
+                "texto_titulo_izquierda": "",
+                "texto_columna_izquierda": "<p>Explora nuestra colección y descubre por qué somos la elección preferida para mujeres que buscan <strong>calzado, bolsos y accesorios<\/strong> con un toque de innovación y exclusividad. Envíos desde <strong>Yopal <\/strong>a todo el país.<\/p>",
+                "altura_imagen_izquierda": 300,
+                "texto_titulo_derecha": "",
+                "texto_columna_derecha": "",
+                "altura_imagen_derecha": 300,
+                "texto_titulo_izquierda_abajo": "",
+                "texto_columna_izquierda_abajo": "",
+                "altura_imagen_izquierda_abajo": 300,
+                "texto_titulo_derecha_abajo": "",
+                "texto_columna_derecha_abajo": "",
+                "altura_imagen_derecha_abajo": 300
             }
         },
         "rich_text_wD8Amm": {
@@ -417,6 +460,7 @@
                 "slide_NCJ8xa",
                 "slide_Rgmii6"
             ],
+            "disabled": true,
             "custom_css": [
                 "div.slideshow__controls {display: none;}"
             ],
@@ -770,30 +814,6 @@
                 "padding_bottom": 24
             }
         },
-        "1707771594d519616a": {
-            "type": "apps",
-            "blocks": {
-                "instafeed_app_block_TTLkRi": {
-                    "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-                    "settings": {
-                        "title": "Síguenos en Instagram @re.pupi",
-                        "title_color": "",
-                        "title_size": 16,
-                        "alignment": "left",
-                        "margin_top": 0,
-                        "margin_bottom": 64,
-                        "html_area": ""
-                    }
-                }
-            },
-            "block_order": [
-                "instafeed_app_block_TTLkRi"
-            ],
-            "disabled": true,
-            "settings": {
-                "include_margins": true
-            }
-        },
         "rich_text_UDrYfG": {
             "type": "rich-text",
             "blocks": {
@@ -915,7 +935,7 @@
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "padding_top": 24,
-                "padding_bottom": 24,
+                "padding_bottom": 44,
                 "padding_horizontal": 5,
                 "padding_horizontal_mobile": 1.5,
                 "full_width": false,
@@ -943,10 +963,11 @@
         }
     },
     "order": [
+        "custom_layout_etePcY",
         "background_video_cNgL4W",
         "background_video_hfhNFC",
         "image_banner",
-        "rich_text_pixJXz",
+        "custom_layout_zW3Y7Y",
         "rich_text_wD8Amm",
         "collection_list_qwxH4B",
         "rich_text_wqAtBN",
@@ -963,7 +984,6 @@
         "slideshow_6NLcFq",
         "multirow_pVV7yL",
         "rich_text_48zF66",
-        "1707771594d519616a",
         "rich_text_UDrYfG",
         "ss_feature_1_7Cr4Tb",
         "image_banner_eqUm4p"
